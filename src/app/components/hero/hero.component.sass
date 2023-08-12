@@ -24,10 +24,12 @@ section.hero
 		@media screen and (max-width: 940px)
 			flex-flow: column
 			justify-content: center
-			align-items: flex-start
 			padding: 0 40px
 			row-gap: 40px
 			max-width: 550px
+		@media screen and (max-width: 500px)
+			padding: 90px 20px
+			justify-content: flex-start
 		img
 			border-radius: 50%
 			width: 256px
@@ -38,7 +40,6 @@ section.hero
 			display: block
 			object-fit: cover
 		.text-content
-			// max-width: 450px
 			margin-right: 24px
 			h1
 				font-size: 3.25rem
@@ -46,10 +47,14 @@ section.hero
 				line-height: 1.5
 				font-weight: 600
 				font-family: Poppins, sans-serif
+				@media screen and (max-width: 500px)
+					font-size: 2.25rem
 			p
 				margin: 0
 				line-height: 1.5
 				font-size: 1.125rem
+				@media screen and (max-width: 500px)
+					font-size: 1rem
 			a
 				text-decoration: none
 				color: inherit
