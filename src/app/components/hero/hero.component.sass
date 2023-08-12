@@ -1,0 +1,116 @@
+$brand-color: #364aff
+
+section.hero
+	position: relative
+	margin: 0
+	height: 850px
+	color: #FFFFFF
+	clip-path: inset(0)
+	overflow: hidden
+	z-index: 1
+	canvas
+		height: 100%
+		position: absolute
+		z-index: -1
+	.content
+		max-width: 950px
+		height: 100%
+		display: flex
+		margin: 0 auto
+		align-items: center
+		justify-content: space-between
+		padding: 0 80px
+		box-sigin: border-box
+		@media screen and (max-width: 940px)
+			flex-flow: column
+			justify-content: center
+			align-items: flex-start
+			padding: 0 40px
+			row-gap: 40px
+			max-width: 550px
+		img
+			border-radius: 50%
+			width: 256px
+			height: 256px
+			background: linear-gradient(90deg, #3340FF99, #9d00ff99)
+			-webkit-backdrop-filter: blur(10px)
+			backdrop-filter: blur(10px)
+			display: block
+			object-fit: cover
+		.text-content
+			// max-width: 450px
+			margin-right: 24px
+			h1
+				font-size: 3.25rem
+				margin-block: .75rem
+				line-height: 1.5
+				font-weight: 600
+				font-family: Poppins, sans-serif
+			p
+				margin: 0
+				line-height: 1.5
+				font-size: 1.125rem
+			a
+				text-decoration: none
+				color: inherit
+				padding: 0.75rem 1.5rem
+				background-color: $brand-color
+				border-radius: 3rem
+				display: inline-block
+				margin-top: 1rem
+				font-size: 1rem
+				transition: .1s ease-in-out
+				&:hover
+					filter: brightness(110%)
+	.hero-header
+		position: fixed
+		width: 100%
+		height: 50px
+		z-index: 3
+		.inner-header
+			display: flex
+			align-items: center
+			justify-content: space-between
+			box-sizing: border-box
+			padding: 0 40px
+			width: 100%
+			height: 100%
+			max-width: 1150px
+			margin: 0 auto
+			.logo
+				display: flex
+				align-items: center
+				flex-shrink: 0
+				img
+					width: 36px
+					height: 36px
+					margin-right: 8px
+				h2
+					margin: 0
+					font-size: 0.9rem
+					font-family: Poppins, sans-serif
+					color: #FFFFFFAA
+					font-weight: 500
+					span
+						color: #FFFFFF77
+			ul
+				margin: 0
+				padding: 0
+				list-style: none
+				width: 100%
+				height: 100%
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				column-gap: 2rem
+				li
+					display: inline-block
+					font-size: 0.9rem
+					a
+						color: #FFFFFFAA
+						text-decoration: none
+						cursor: pointer
+						transition: .2s ease-in-out
+						font-size: 0.875rem
+						&:hover
+							color: #FFFFFF

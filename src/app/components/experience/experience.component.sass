@@ -1,0 +1,110 @@
+$brand-color: #364aff
+
+@keyframes fade-in
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+.experience
+	padding: 90px 40px
+	width: 100%
+	opacity: 0
+	transform: translateY(40px)
+	transition: .5s ease-in-out
+	box-sizing: border-box
+	&.scrolled
+		opacity: 1
+		transform: translateY(0px)
+	.inner-center
+		max-width: 550px
+		margin: 0 auto
+		display: flex
+		flex-flow: column
+		column-gap: 20px
+		justify-content: space-between
+		line-height: 1.75
+		.section-description
+			width: 100%
+			h2
+				font-size: 44px
+				font-weight: 600
+				margin: 0
+				line-height: 1
+				font-family: Poppins, sans-serif
+			small
+				color: #343538
+				margin: 0 0 .5rem
+				font-size: 15px
+			p
+				max-width: 600px
+		.companies-container
+			display: flex
+			flex-flow: column
+			ul.companies-controller
+				list-style: none
+				margin: 0
+				padding: 0
+				width: 100%
+				display: flex
+				overflow-x: auto
+				li
+					width: 200px
+					display: inline-block
+					flex-shrink: 0
+					button
+						width: 100%
+						font: inherit
+						background-color: #FFFFFF
+						font-weight: 600
+						font-size: 0.85rem
+						border: 0
+						outline: 0
+						cursor: pointer
+						transition: .2s ease-in-out
+						margin-bottom: 4px
+						padding-block: .5rem
+						&[aria-selected=true]
+							color: #364aff
+							background-color: #FAFAFA
+			.company-displayer
+				width: 100%
+				min-height: 400px
+				.company-card
+					display: none
+					width: 100%
+					animation: fade-in ease-in-out .3s
+					&.selected
+						display: flex
+					column-gap: 15px
+					margin: 0 auto
+					.job-title
+						font-family: Poppins, sans-serif
+						font-size: 18px
+						font-weight: 500
+						a
+							color: $brand-color
+							text-decoration: none
+							font-weight: 600
+					.date
+						flex-shrink: 0
+						font-size: .85rem
+						margin-bottom: 15px
+						color: #343538
+					h3
+						margin: 0
+					ul
+						margin: 0
+						padding: 0 0 0 15px
+@media screen and (min-width: 751px)
+	.experience
+		.inner-center
+			max-width: 950px
+			.companies-container
+				flex-flow: row
+				column-gap: 40px
+				ul.companies-controller
+					max-width: 200px
+					display: block
+					li
+						display: block
+						width: 100%

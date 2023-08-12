@@ -1,0 +1,56 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="80 110 134 80"
+          shape-rendering="geometricPrecision"
+          text-rendering="geometricPrecision"
+					stroke="#0d00fa"
+        >
+          <g transform="translate(0 0.000001)">
+            <path
+              d="M156.921294,183.737953c35.811163-12.233277,35.091085,12.392526,43.758634-1.460108-8.19497-41.424791-92.916008,21.504381-110.338421-16.324316-7.146082-24.019503,20.923019-49.871314,52.69652-37.989666-5.645515,6.45612-6.210065,24.706519.429624,32.063944-17.779474-55.752534,42.455012-51.844411,50.559998-37.345453c21.39526-.182528,20.572862,6.887454,8.232839,12.776036"
+              transform="translate(.000006 0.000001)"
+              fill="none"
+              stroke-width="6.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M133.700376,176.11508c-.762221-16.659037-7.059484-26.999741-21.925199-26.115082"
+              transform="translate(.000006 0.000001)"
+              fill="none"
+              stroke-width="6.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M199.32901,157.758376c-2.257653-2.156127-7.20024-3.38447-10.040066-1.837118"
+              fill="none"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M168.430969,153.421988c3.312599-2.065972,8.979046-1.558622,11.223715,1.806239"
+              transform="translate(.000001 0.000001)"
+              fill="none"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M202.260494,135.458391c3.024723,12.762246-3.342999,28.341133-12.105077,32.602536"
+              transform="translate(0 0.000001)"
+              fill="none"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M176.76934,136.258321c5.540411-14.666943-4.311025-16.046354-18.138699-5.116043"
+              transform="translate(.000001 0)"
+              fill="none"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>

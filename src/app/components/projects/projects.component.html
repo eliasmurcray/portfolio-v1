@@ -1,0 +1,40 @@
+<section class="projects js-scroll">
+  <div class="inner-center">
+    <h2 id="projects">Projects</h2>
+    <ul id="project-list" class="projects-list">
+      <li *ngFor="let project of projects" class="project-item">
+        <h2>{{ project.title }}</h2>
+        <div class="project-inner-flex">
+          <a class="project-thumb-a" [href]="project.liveUrl" target="_blank">
+            <img
+              class="thumbnail"
+              [src]=""
+              [alt]="project.imageUrl"
+              [attr.data-src]="
+                '../../../assets/images/project-thumbnails/' + project.imageUrl
+              "
+            />
+          </a>
+          <article>
+            <p>{{ project.description }}</p>
+            <ul class="tags">
+              <li *ngFor="let tag of project.tags" [id]="tag">
+                <img
+                  class="tag"
+                  [src]="'../../../assets/images/icons/' + tag + '.png'"
+                  [alt]="tag"
+                  width="48"
+                  height="48"
+                />
+              </li>
+            </ul>
+            <div>
+              <a [href]="project.liveUrl" target="_blank">View Live</a>
+              <a [href]="project.codeUrl" target="_blank">Source Code</a>
+            </div>
+          </article>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
